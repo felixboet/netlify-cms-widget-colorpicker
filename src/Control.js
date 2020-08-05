@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 import { ChromePicker } from "react-color";
 import validateColor from "validate-color";
 
-export default class ColorControl extends React.Component {
+export default class Control extends React.Component {
   state = {
     displayColorPicker: false,
     color: this.props.value,
