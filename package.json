@@ -1,0 +1,51 @@
+{
+  "name": "netlify-cms-widget-colorpicker",
+  "description": "very flexible color picker widget for Netlify CMS",
+  "keywords": [
+    "netlify",
+    "netlify-cms",
+    "cms",
+    "widget",
+    "color",
+    "colorpicker",
+    "colorwidget",
+    "colorcode"
+  ],
+  "version": "0.0.1",
+  "homepage": "https://github.com/felixboet/netlify-cms-widget-colorcode",
+  "author": "Felix Böttcher",
+  "license": "MIT",
+  "main": "dist/main.js",
+  "devDependencies": {
+    "babel-loader": "^8.1.0",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-plugin-transform-export-extensions": "^6.22.0",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "cross-env": "^7.0.2",
+    "css-loader": "^4.2.0",
+    "html-webpack-plugin": "^4.3.0",
+    "netlify-cms": "^2.10.55",
+    "react": "^16.3.2",
+    "source-map-loader": "^1.0.1",
+    "style-loader": "^1.2.1",
+    "webpack": "^4.44.1",
+    "webpack-cli": "^3.3.12",
+    "webpack-serve": "^3.2.0"
+  },
+  "dependencies": {
+    "prop-types": "^15.7.2",
+    "react-color": "^2.18.1",
+    "validate-color": "^2.1.0"
+  },
+  "peerDependencies": {
+    "react": "^16"
+  },
+  "scripts": {
+    "start": "webpack-serve --log-level error --open-path '/#/collections/test/entries/test'",
+    "demo": "webpack --display errors-only --devtool source-map",
+    "build": "cross-env NODE_ENV=production webpack",
+    "prepublishOnly": "npm run build"
+  }
+}
