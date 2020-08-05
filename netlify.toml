@@ -1,6 +1,6 @@
 [build]
   publish = "public/"
-  command = "yarn demo"
+  command = "webpack --display errors-only --devtool source-map"
 
 [[redirects]]
   from = "/demo"
