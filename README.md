@@ -1,3 +1,5 @@
+STILL UNDER CONSTRUCTION
+
 # netlify-cms-widget-colorpicker
 
 <img align="right" src="/docs/netlify-cms-widget-colorpicker.gif">

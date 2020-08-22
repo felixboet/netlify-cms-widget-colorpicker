@@ -45,5 +45,8 @@
   },
   "peerDependencies": {
     "react": "^16"
-  }
+  },
+  "files": [
+    "dist/main.js"
+  ]
 }
