@@ -1,6 +1,6 @@
 {
   "name": "netlify-cms-widget-colorpicker",
-  "description": "very flexible color picker widget for Netlify CMS",
+  "description": "a color picker widget for Netlify CMS, supports HEX color codes, RGBA and color names",
   "keywords": [
     "netlify",
     "netlify-cms",
@@ -8,30 +8,35 @@
     "widget",
     "color",
     "colorpicker",
-    "colorwidget",
-    "colorcode"
+    "colorwidget"
   ],
   "version": "0.0.1",
-  "homepage": "https://github.com/felixboet/netlify-cms-widget-colorcode",
+  "homepage": "https://github.com/felixboet/netlify-cms-widget-colorpicker",
   "author": "Felix Böttcher",
   "license": "MIT",
   "main": "dist/main.js",
+  "scripts": {
+    "start": "webpack-serve --log-level error --open-path '/#/collections/colors/entries/colors'",
+    "demo": "webpack --display errors-only --devtool source-map",
+    "build": "cross-env NODE_ENV=production webpack",
+    "prepublishOnly": "npm run build"
+  },
   "devDependencies": {
-    "@babel/core": "^7.11.1",
+    "@babel/core": "^7.11.4",
     "@babel/plugin-proposal-class-properties": "^7.10.4",
     "@babel/preset-env": "^7.11.0",
     "@babel/preset-react": "^7.10.4",
     "babel-loader": "^8.1.0",
     "cross-env": "^7.0.2",
-    "css-loader": "^4.2.0",
+    "css-loader": "^4.2.1",
     "html-webpack-plugin": "^4.3.0",
     "netlify-cms": "^2.10.55",
     "react": "^16.3.2",
-    "source-map-loader": "^1.0.1",
+    "source-map-loader": "^1.0.2",
     "style-loader": "^1.2.1",
     "webpack": "^4.44.1",
     "webpack-cli": "^3.3.12",
-    "webpack-serve": "^3.2.0"
+    "webpack-serve": "^0.3.1"
   },
   "dependencies": {
     "prop-types": "^15.7.2",
@@ -40,11 +45,5 @@
   },
   "peerDependencies": {
     "react": "^16"
-  },
-  "scripts": {
-    "start": "webpack-serve --log-level error --open-path '/#/collections/test/entries/test'",
-    "demo": "webpack --display errors-only --devtool source-map",
-    "build": "cross-env NODE_ENV=production webpack",
-    "prepublishOnly": "npm run build"
   }
 }

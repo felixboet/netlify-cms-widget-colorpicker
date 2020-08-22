@@ -1,7 +1,7 @@
 import "./bootstrap.js";
 import CMS, { init } from "netlify-cms";
 import "netlify-cms/dist/cms.css";
-import { ColorControl, ColorPreview } from "../src";
+import { ColorControl } from "../src";
 
 const config = {
   backend: {
@@ -11,15 +11,80 @@ const config = {
   media_folder: "assets",
   collections: [
     {
-      name: "test",
-      label: "Test",
+      name: "colors",
+      label: "Colors",
+      description:
+        "Demo CMS for netlify-cms-widget-colorpicker, see https://github.com/felixboet/netlify-cms-widget-colorpicker for more information.",
+      editor: { preview: false },
       files: [
         {
-          file: "test.yml",
-          name: "test",
-          label: "Test",
+          file: "colors.yml",
+          name: "colors",
+          label: "Colors",
           fields: [
-            { name: "test_widget", label: "Test Widget", widget: "test" },
+            {
+              name: "default",
+              label: "Default Color Picker (Sketch Picker)",
+              widget: "color",
+              default: "LightSteelBlue",
+              required: false,
+            },
+            {
+              name: "block",
+              label: "Color with Block Picker",
+              widget: "color",
+              required: false,
+              picker: "block",
+            },
+            {
+              name: "chrome",
+              label: "Color with Chrome Picker",
+              widget: "color",
+              required: false,
+              picker: "chrome",
+            },
+            {
+              name: "circle",
+              label: "Color with Circle Picker",
+              widget: "color",
+              required: false,
+              picker: "circle",
+            },
+            {
+              name: "compact",
+              label: "Color with Compact Picker",
+              widget: "color",
+              required: false,
+              picker: "compact",
+            },
+            {
+              name: "github",
+              label: "Color with Github Picker",
+              widget: "color",
+              required: false,
+              picker: "github",
+            },
+            {
+              name: "sketch",
+              label: "Color with Sketch Picker",
+              widget: "color",
+              required: false,
+              picker: "sketch",
+            },
+            {
+              name: "swatches",
+              label: "Color with Swatches Picker",
+              widget: "color",
+              required: false,
+              picker: "swatches",
+            },
+            {
+              name: "twitter",
+              label: "Color with Twitter Picker",
+              widget: "color",
+              required: false,
+              picker: "twitter",
+            },
           ],
         },
       ],
@@ -27,6 +92,6 @@ const config = {
   ],
 };
 
-CMS.registerWidget("test", ColorControl, ColorPreview);
+CMS.registerWidget("color", ColorControl);
 
 init({ config });

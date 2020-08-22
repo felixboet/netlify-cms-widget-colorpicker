@@ -1,7 +1,7 @@
 [build]
   publish = "public/"
-  command = "webpack --display errors-only --devtool source-map"
+  command = "npm run demo"
 
 [[redirects]]
   from = "/demo"
-  to = "/#/collections/test/entries/test"
+  to = "/#/collections/colors/entries/colors"
