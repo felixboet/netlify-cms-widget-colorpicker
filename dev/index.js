@@ -24,7 +24,7 @@ const config = {
           fields: [
             {
               name: "default",
-              label: "Default Color Picker (Sketch Picker)",
+              label: "Default Color Picker (Chrome Picker)",
               widget: "color",
               default: "LightSteelBlue",
               required: false,
