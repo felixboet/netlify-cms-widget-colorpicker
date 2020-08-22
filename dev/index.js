@@ -14,7 +14,7 @@ const config = {
       name: "colors",
       label: "Colors",
       description:
-        "Demo CMS for netlify-cms-widget-colorpicker, see https://github.com/felixboet/netlify-cms-widget-colorpicker for more information.",
+        "Demo CMS for netlify-cms-widget-colorpicker - https://github.com/felixboet/netlify-cms-widget-colorpicker",
       editor: { preview: false },
       files: [
         {
