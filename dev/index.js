@@ -1,7 +1,7 @@
 import "./bootstrap.js";
 import CMS, { init } from "netlify-cms";
 import "netlify-cms/dist/cms.css";
-import { ColorControl } from "../src";
+import { Control as ColorControl } from "../src";
 
 const config = {
   backend: {
