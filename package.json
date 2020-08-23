@@ -10,7 +10,7 @@
     "colorpicker",
     "colorwidget"
   ],
-  "version": "0.0.1",
+  "version": "0.0.2",
   "homepage": "https://github.com/felixboet/netlify-cms-widget-colorpicker",
   "author": "Felix Böttcher",
   "license": "MIT",
@@ -47,6 +47,6 @@
     "react": "^16"
   },
   "files": [
-    "dist/main.js"
+    "dist/"
   ]
 }

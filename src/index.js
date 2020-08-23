@@ -1,8 +1,7 @@
-import { Control } from "./ColorControl";
+import { Control } from "./Control";
 
-const Widget = {
-  name: "color",
-  controlComponent: Control,
-};
+if (typeof window !== "undefined") {
+  window.NetlifyCmsWidgetColor = { control: Control };
+}
 
-export { Widget, Control };
+export default { Control };
