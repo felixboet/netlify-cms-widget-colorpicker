@@ -48,7 +48,7 @@ fields:
 
 ## Configuration
 
-The default color picker is the "sketch picker", you can change it via the options
+The default color picker is the "chrome picker", you can change it via the options
 
 ```yaml
 fields:
