@@ -3,13 +3,13 @@ the code is working but the NPM module is not, follow instructions [here](https:
 
 # netlify-cms-widget-colorpicker
 
-<img align="right" src="/docs/netlify-cms-widget-colorpicker.gif">
-
 A color picker widget for Netlify CMS that supports HEX color codes, alpha channels via RGBA, color names and custom values.
 
 Based on the awesome [react-color](https://casesandberg.github.io/react-color/)
 
 [-> check out the demo here](https://colorpicker-widget.netlify.app/demo)
+
+<img align="center" src="/docs/netlify-cms-widget-colorpicker.gif">
 
 ## Install
 
