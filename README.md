@@ -26,7 +26,7 @@ CMS.registerWidget("color", ColorControl);
 Via `script` tag:
 
 ```html
-<script src="https://unpkg.com/netlify-cms-widget-color@^0.1.0"></script>
+<script src="https://unpkg.com/netlify-cms-widget-colorpicker@^0.1.0"></script>
 
 <script>
   CMS.registerWidget("color", ColorControl);
