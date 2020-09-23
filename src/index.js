@@ -12,7 +12,7 @@ import {
 } from "react-color";
 import validateColor from "validate-color";
 
-const DEFAULT_PICKER = "chrome";
+const DEFAULT_PICKER = "sketch";
 
 const Picker = {
   block: BlockPicker,
