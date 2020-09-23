@@ -1,6 +1,20 @@
 {
   "name": "netlify-cms-widget-colorpicker",
+  "version": "0.1.0",
   "description": "a color picker widget for Netlify CMS, supports HEX color codes, RGBA and color names",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/felixboet/netlify-cms-widget-colorpicker"
+  },
+  "main": "dist/main.js",
+  "scripts": {
+    "start": "webpack-serve --log-level error --open-path '/#/collections/colors/entries/colors'",
+    "demo": "webpack --display errors-only --devtool source-map",
+    "build": "cross-env NODE_ENV=production webpack",
+    "prepublishOnly": "npm run build"
+  },
+  "author": "Felix Böttcher",
+  "license": "MIT",
   "keywords": [
     "netlify",
     "netlify-cms",
@@ -10,17 +24,6 @@
     "colorpicker",
     "colorwidget"
   ],
-  "version": "0.0.2",
-  "homepage": "https://github.com/felixboet/netlify-cms-widget-colorpicker",
-  "author": "Felix Böttcher",
-  "license": "MIT",
-  "main": "dist/main.js",
-  "scripts": {
-    "start": "webpack-serve --log-level error --open-path '/#/collections/colors/entries/colors'",
-    "demo": "webpack --display errors-only --devtool source-map",
-    "build": "cross-env NODE_ENV=production webpack",
-    "prepublishOnly": "npm run build"
-  },
   "devDependencies": {
     "@babel/core": "^7.11.4",
     "@babel/plugin-proposal-class-properties": "^7.10.4",
@@ -45,8 +48,5 @@
   },
   "peerDependencies": {
     "react": "^16"
-  },
-  "files": [
-    "dist/"
-  ]
+  }
 }

@@ -6,8 +6,6 @@ STILL UNDER CONSTRUCTION
 
 A color picker widget for Netlify CMS that supports HEX color codes, alpha channels via RGBA, color names and custom values.
 
-Based on the awesome [react-color](https://casesandberg.github.io/react-color/)
-
 [-> check out the demo here](https://colorpicker-widget.netlify.app/demo)
 
 ## Install
@@ -92,3 +90,5 @@ npm start
 MIT Licensed. Copyright Felix Böttcher
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/973b0d6d-bb04-412c-b3b1-997fddf42b88/deploy-status)](https://app.netlify.com/sites/colorpicker-widget/deploys)
+
+Based on the awesome [react-color](https://casesandberg.github.io/react-color/)
