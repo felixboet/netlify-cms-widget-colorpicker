@@ -15,9 +15,9 @@ npm install --save netlify-cms-widget-colorpicker
 ```
 
 ```js
-import ColorControl from "netlify-cms-widget-colorpicker";
+import { ColorControl, ColorPreview } from "netlify-cms-widget-colorpicker";
 
-CMS.registerWidget("color", ColorControl);
+CMS.registerWidget("color", ColorControl, ColorPreview);
 ```
 
 Via `script` tag:
@@ -62,7 +62,9 @@ swatches
 twitter
 ```
 
-##
+## To Do
+
+Color Swatches / Presets can't be customized yet, will be added soon
 
 ## Support
 
