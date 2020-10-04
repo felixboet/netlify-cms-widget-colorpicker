@@ -1,6 +1,3 @@
-STILL UNDER CONSTRUCTION
-the code is working but the NPM module is not, follow instructions [here](https://github.com/felixboet/netlify-cms-widget-colorpicker/issues/1#issuecomment-695787569) to import the code directly ... and if someone could help to create the NPM module, it would be awesome, I am new to this.
-
 # netlify-cms-widget-colorpicker
 
 A color picker widget for Netlify CMS that supports HEX color codes, alpha channels via RGBA, color names and custom values.
@@ -69,7 +66,7 @@ twitter
 
 ## Support
 
-For help with this widget, open an [issue](https://github.com/felixboet/netlify-cms-widget-colorpicker)
+For help with this widget, open an [issue](https://github.com/felixboet/netlify-cms-widget-colorpicker/issues)
 
 ## Development
 
