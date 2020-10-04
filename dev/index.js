@@ -1,7 +1,7 @@
 import "./bootstrap.js";
 import CMS, { init } from "netlify-cms";
 import "netlify-cms/dist/cms.css";
-import { ColorControl as Control, ColorPreview as Preview } from "../src";
+import { ColorControl, ColorPreview } from "../src";
 
 const config = {
   backend: {
@@ -78,6 +78,6 @@ const config = {
   ],
 };
 
-CMS.registerWidget("color", Control, Preview);
+CMS.registerWidget("color", ColorControl, ColorPreview);
 
 init({ config });
