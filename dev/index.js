@@ -15,6 +15,7 @@ const config = {
       label: "Colors",
       description:
         "Demo CMS for netlify-cms-widget-colorpicker - https://github.com/felixboet/netlify-cms-widget-colorpicker",
+      preview: "false",
       files: [
         {
           file: "colors.yml",
@@ -34,20 +35,6 @@ const config = {
               widget: "color",
               required: false,
               picker: "block",
-            },
-            {
-              name: "chrome",
-              label: "Color with Chrome Picker",
-              widget: "color",
-              required: false,
-              picker: "chrome",
-            },
-            {
-              name: "circle",
-              label: "Color with Circle Picker",
-              widget: "color",
-              required: false,
-              picker: "circle",
             },
             {
               name: "compact",
