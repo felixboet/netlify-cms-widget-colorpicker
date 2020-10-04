@@ -1,7 +1,7 @@
-const path = require('path')
-const HtmlWebpackPlugin = require('html-webpack-plugin')
+const path = require('path');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 
-const developmentConfig = {
+module.exports = {
   mode: 'development',
   entry: './dev/index.js',
   output: {
@@ -25,23 +25,6 @@ const developmentConfig = {
       },
     ],
   },
-  plugins: [
-    new HtmlWebpackPlugin(),
-  ],
+  plugins: [new HtmlWebpackPlugin()],
   devtool: 'eval-source-map',
-}
-
-const productionConfig = {
-  mode: 'production',
-  module: {
-    rules: [
-      {
-        test: /\.jsx?$/,
-        loader: 'babel-loader',
-      },
-    ],
-  },
-  devtool: 'source-map',
-}
-
-module.exports = process.env.NODE_ENV === 'production' ? productionConfig : developmentConfig
+};
