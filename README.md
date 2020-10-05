@@ -20,15 +20,6 @@ import { ColorControl, ColorPreview } from "netlify-cms-widget-colorpicker";
 CMS.registerWidget("color", ColorControl, ColorPreview);
 ```
 
-Via `script` tag:
-
-```html
-<script src="https://unpkg.com/netlify-cms-widget-colorpicker@^0.1.1"></script>
-
-<script>
-  CMS.registerWidget("color", ColorControl);
-</script>
-```
 
 <img src="/docs/netlify-cms-widget-colorpicker-examples.jpg">
 
