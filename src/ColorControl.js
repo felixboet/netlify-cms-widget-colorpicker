@@ -3,7 +3,6 @@ import PropTypes from "prop-types";
 import {
   BlockPicker,
   ChromePicker,
-  CirclePicker,
   CompactPicker,
   GithubPicker,
   SketchPicker,
@@ -24,7 +23,7 @@ const Picker = {
   twitter: TwitterPicker,
 };
 
-export default class InlineSelectControl extends React.Component {
+export default class ColorControl extends React.Component {
   static propTypes = {
     onChange: PropTypes.func.isRequired,
     forID: PropTypes.string,
@@ -43,18 +42,20 @@ export default class InlineSelectControl extends React.Component {
     color: this.props.value,
     picker: this.props.field.get("picker") || DEFAULT_PICKER,
     disableAlpha: this.props.field.get("disableAlpha") || "false",
-    colors: this.props.field.get("colors") ? this.props.field.get("colors").toJS() :[
-      "#FF6900",
-      "#FCB900",
-      "#7BDCB5",
-      "#00D084",
-      "#8ED1FC",
-      "#0693E3",
-      "#ABB8C3",
-      "#EB144C",
-      "#F78DA7",
-      "#9900EF",
-    ],
+    colors: this.props.field.get("colors")
+      ? this.props.field.get("colors").toJS()
+      : [
+          "#FF6900",
+          "#FCB900",
+          "#7BDCB5",
+          "#00D084",
+          "#8ED1FC",
+          "#0693E3",
+          "#ABB8C3",
+          "#EB144C",
+          "#F78DA7",
+          "#9900EF",
+        ],
   };
 
   handleClick = () => {
@@ -146,7 +147,7 @@ export default class InlineSelectControl extends React.Component {
               color={value || ""}
               onChange={this.handleChange}
               triangle={"hide"}
-              //colors={this.state.colors}
+              colors={this.state.colors}
               //presetColors={this.state.colors}
             />
           </div>
