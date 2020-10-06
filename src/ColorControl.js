@@ -43,7 +43,7 @@ export default class InlineSelectControl extends React.Component {
     color: this.props.value,
     picker: this.props.field.get("picker") || DEFAULT_PICKER,
     disableAlpha: this.props.field.get("disableAlpha") || "false",
-    colors: this.props.field.get("colors") || [
+    colors: this.props.field.get("colors") ? this.props.field.get("colors").toJS() :[
       "#FF6900",
       "#FCB900",
       "#7BDCB5",
