@@ -33,7 +33,7 @@ fields:
 
 ## Configuration
 
-###Color Picker
+#### Color Picker
 
 The default color picker is the "chrome picker", you can change it via the options
 
@@ -54,7 +54,7 @@ swatches
 twitter
 ```
 
-### Preset Colors
+#### Preset Colors
 
 for the `block`, `compact`, `github`, `sketch`, `twitter` picker, you can set the preset colors
 
@@ -74,7 +74,7 @@ colors: [
 ],
 ```
 
-### Disable Alpha
+#### Disable Alpha
 
 for the `chrome` and `sketch` picker, you can disable the slider for the alpha value
 
