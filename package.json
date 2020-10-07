@@ -1,6 +1,6 @@
 {
   "name": "netlify-cms-widget-colorpicker",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "description": "a color picker widget for Netlify CMS, supports HEX color codes, RGBA and color names",
   "repository": {
     "type": "git",
