@@ -35,7 +35,7 @@ fields:
 
 #### Color Picker
 
-The default color picker is the "chrome picker", you can change it via the options
+The default color picker is the `chrome picker`, change it via the `picker` options
 
 ```yaml
 fields:
@@ -56,13 +56,13 @@ twitter
 
 #### Preset Colors
 
-for the `block`, `compact`, `github`, `sketch`, `twitter` picker, you can set the preset colors
+set the preset colors for the `block`, `compact`, `github`, `sketch`, `twitter` picker:
 
 ```
 colors: [ "#F44336", "#9C27B0", "#3F51B5", ...],
 ```
 
-for the `swatches` picker, you can set the preset colors as an array of color groups, each with an array of colors
+for the `swatches` set the preset colors as an array of color groups, each with an array of colors:
 
 ```
 colors: [
@@ -76,15 +76,13 @@ colors: [
 
 #### Disable Alpha
 
-for the `chrome` and `sketch` picker, you can disable the slider for the alpha value
+disable the slider for the alpha value for the `chrome` and `sketch` picker:
 
 ```
 disableAlpha: true
 ```
 
 ## To Do
-
-Color Swatches / Presets can't be customized yet, will be added soon
 
 ## Support
 
@@ -102,6 +100,15 @@ To run a copy of Netlify CMS with the widget loaded for development, use the sta
 
 ```shell
 npm start
+```
+
+#### Publish
+
+change version in package.json
+
+```shell
+npm run build
+npm run publish
 ```
 
 ## License
