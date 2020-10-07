@@ -27,21 +27,18 @@ const config = {
               label: "Color with Chrome Picker",
               widget: "color",
               hint: "that's the default color picker",
-              required: false,
             },
             {
               name: "chromeWithoutAlpha",
               label: "Color with Chrome Picker",
               widget: "color",
               hint: "disableAlpha: true",
-              required: false,
               disableAlpha: true,
             },
             {
               name: "block",
               label: "Color with Block Picker",
               widget: "color",
-              required: false,
               picker: "block",
               colors: [
                 "#F44336",
@@ -65,7 +62,6 @@ const config = {
               name: "compact",
               label: "Color with Compact Picker",
               widget: "color",
-              required: false,
               picker: "compact",
               colors: [
                 "#F44336",
@@ -98,7 +94,6 @@ const config = {
               name: "github",
               label: "Color with Github Picker",
               widget: "color",
-              required: false,
               picker: "github",
               colors: [
                 "#F44336",
@@ -128,7 +123,6 @@ const config = {
               name: "sketch",
               label: "Color with Sketch Picker",
               widget: "color",
-              required: false,
               picker: "sketch",
               colors: [
                 "#F44336",
@@ -156,7 +150,6 @@ const config = {
               name: "swatches",
               label: "Color with Swatches Picker",
               widget: "color",
-              required: false,
               picker: "swatches",
               colors: [
                 ["#FF8A80", "#FF5252", "#FF1744", "#D50000"],
@@ -177,7 +170,6 @@ const config = {
               name: "twitter",
               label: "Color with Twitter Picker",
               widget: "color",
-              required: false,
               picker: "twitter",
               colors: [
                 "#F44336",
