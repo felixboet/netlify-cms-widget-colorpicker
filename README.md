@@ -76,7 +76,7 @@ colors: [
 
 #### Disable Alpha
 
-disable the slider for the alpha value for the `chrome` and `sketch` picker:
+disable the alpha-slider for `chrome` and `sketch` picker, default is `false`:
 
 ```
 disableAlpha: true
