@@ -62,7 +62,7 @@ set the preset colors for the `block`, `compact`, `github`, `sketch`, `twitter` 
 colors: [ "#F44336", "#9C27B0", "#3F51B5", ...],
 ```
 
-for the `swatches` set the preset colors as an array of color groups, each with an array of colors:
+for the `swatches` picker set the preset colors as an array of color groups, each with an array of colors:
 
 ```
 colors: [
