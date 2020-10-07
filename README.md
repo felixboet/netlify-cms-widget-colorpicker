@@ -20,7 +20,6 @@ import { ColorControl, ColorPreview } from "netlify-cms-widget-colorpicker";
 CMS.registerWidget("color", ColorControl, ColorPreview);
 ```
 
-
 <img src="/docs/netlify-cms-widget-colorpicker-examples.jpg">
 
 ## How to use
@@ -33,6 +32,8 @@ fields:
 ```
 
 ## Configuration
+
+###Color Picker
 
 The default color picker is the "chrome picker", you can change it via the options
 
@@ -51,6 +52,34 @@ github
 sketch
 swatches
 twitter
+```
+
+### Preset Colors
+
+for the `block`, `compact`, `github`, `sketch`, `twitter` picker, you can set the preset colors
+
+```
+colors: [ "#F44336", "#9C27B0", "#3F51B5", ...],
+```
+
+for the `swatches` picker, you can set the preset colors as an array of color groups, each with an array of colors
+
+```
+colors: [
+  ["#FF8A80", "#FF5252", "#FF1744", "#D50000"],
+  ["#FF80AB", "#FF4081", "#F50057", "#C51162"],
+  ["#EA80FC", "#E040FB", "#D500F9", "#AA00FF"],
+  ["#B388FF", "#7C4DFF", "#651FFF", "#6200EA"],
+  ...
+],
+```
+
+### Disable Alpha
+
+for the `chrome` and `sketch` picker, you can disable the slider for the alpha value
+
+```
+disableAlpha: true
 ```
 
 ## To Do
