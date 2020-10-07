@@ -148,7 +148,7 @@ export default class ColorControl extends React.Component {
               onChange={this.handleChange}
               triangle={"hide"}
               colors={this.state.colors}
-              //presetColors={this.state.colors}
+              presetColors={this.state.colors}
               disableAlpha={this.state.disableAlpha}
             />
           </div>
