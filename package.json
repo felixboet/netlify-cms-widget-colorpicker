@@ -1,6 +1,6 @@
 {
   "name": "netlify-cms-widget-colorpicker",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "a highliy customizable color picker widget for Netlify CMS",
   "repository": {
     "type": "git",

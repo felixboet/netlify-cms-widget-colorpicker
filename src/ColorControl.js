@@ -24,7 +24,7 @@ const Picker = {
 const DefaultPickerWidth = {
   block: "170px",
   github: "187px",
-  sketch: "198px",
+  sketch: "244px",
   swatches: "322px",
   twitter: "276px",
 };
@@ -113,6 +113,8 @@ const DefaultPresetColors = {
     "#FFC107",
     "#FF9800",
     "#FF5722",
+    "#9e9e9e",
+    "#607d8b",
   ],
   swatches: [
     ["#FF8A80", "#FF5252", "#FF1744", "#D50000"],
