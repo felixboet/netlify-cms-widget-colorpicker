@@ -32,8 +32,9 @@ const config = {
               name: "chromeWithAlpha",
               label: "Color with Chrome Picker",
               widget: "color",
-              hint: "enableAlpha: true",
+              hint: "enableAlpha: true, allowInput: true",
               enableAlpha: true,
+              allowInput: true,
             },
             {
               name: "block",
