@@ -101,7 +101,7 @@ enableAlpha: true
 only for `block`, `github`, `sketch`, `swatches`, `twitter` picker
 
 ```
-pickerWidth: 300px
+pickerWidth: "500px"
 ```
 
 #### Picker Height
@@ -109,7 +109,7 @@ pickerWidth: 300px
 only for `swatches` picker
 
 ```
-pickerHeight: 300px
+pickerHeight: "300px"
 ```
 
 ## Support
