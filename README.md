@@ -1,10 +1,10 @@
 # netlify-cms-widget-colorpicker
 
-A color picker widget for Netlify CMS that supports HEX color codes, alpha channels via RGBA, color names and custom values.
+A highly customizable color picker widget for Netlify CMS that supports HEX color codes, alpha channels via RGBA, color names and custom values. Choose from seven different color pickers
 
 [-> check out the demo here](https://colorpicker-widget.netlify.app/demo)
 
-<img align="center" src="/docs/netlify-cms-widget-colorpicker.gif">
+<img src="/docs/netlify-cms-widget-colorpicker.gif">
 
 ## Install
 
@@ -35,7 +35,7 @@ fields:
 
 #### Color Picker
 
-The default color picker is the `chrome picker`, change it via the `picker` options
+The default color picker is the `chrome` picker, change it via the `picker` options
 
 ```yaml
 fields:
@@ -54,18 +54,32 @@ swatches
 twitter
 ```
 
+#### Allow Input
+
+Allow raw text input in the string field:
+
+```
+allowInput: true
+```
+
 #### Preset Colors
 
 set the preset colors for the `block`, `compact`, `github`, `sketch`, `twitter` picker:
 
 ```
-colors: [ "#F44336", "#9C27B0", "#3F51B5", ...],
+presetColors: [ "#F44336", "#9C27B0", "#3F51B5", ...],
+```
+
+for the `sketch` picker, they may also be described as an array of objects with color and title properties:
+
+```
+[{ color: '#f00', title: 'red' }]
 ```
 
 for the `swatches` picker set the preset colors as an array of color groups, each with an array of colors:
 
 ```
-colors: [
+presetColors: [
   ["#FF8A80", "#FF5252", "#FF1744", "#D50000"],
   ["#FF80AB", "#FF4081", "#F50057", "#C51162"],
   ["#EA80FC", "#E040FB", "#D500F9", "#AA00FF"],
@@ -74,15 +88,29 @@ colors: [
 ],
 ```
 
-#### Disable Alpha
+#### Enable Alpha
 
-disable the alpha-slider for `chrome` and `sketch` picker, default is `false`:
+enable the alpha-slider for `chrome` and `sketch` picker, default is `false`:
 
 ```
-disableAlpha: true
+enableAlpha: true
 ```
 
-## To Do
+#### Picker Width
+
+only for `block`, `github`, `sketch`, `swatches`, `twitter` picker
+
+```
+pickerWidth: 300px
+```
+
+#### Picker Height
+
+only for `swatches` picker
+
+```
+pickerHeight: 300px
+```
 
 ## Support
 
