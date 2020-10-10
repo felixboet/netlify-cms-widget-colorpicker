@@ -136,7 +136,7 @@ change version in package.json
 
 ```shell
 npm run build
-npm run publish
+npm publish
 ```
 
 ## License
