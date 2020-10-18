@@ -219,7 +219,7 @@ export default class ColorControl extends React.Component {
               style={{
                 position: "absolute",
                 right: "6px",
-                zIndex: "3",
+                zIndex: "1003",
                 padding: "8px",
                 marginTop: "11px",
               }}
@@ -244,7 +244,7 @@ export default class ColorControl extends React.Component {
           // color swatch background with checkerboard to display behind transparent colors
           style={{
             position: "absolute",
-            zIndex: "1",
+            zIndex: "1001",
             background:
               'url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAMUlEQVQ4T2NkYGAQYcAP3uCTZhw1gGGYhAGBZIA/nYDCgBDAm9BGDWAAJyRCgLaBCAAgXwixzAS0pgAAAABJRU5ErkJggg==")',
             height: "38px",
@@ -258,7 +258,7 @@ export default class ColorControl extends React.Component {
           // color swatch
           style={{
             position: "absolute",
-            zIndex: "2",
+            zIndex: "1002",
             background: validateColor(this.props.value)
               ? this.props.value
               : "#fff",
@@ -287,7 +287,7 @@ export default class ColorControl extends React.Component {
             // color picker container
             style={{
               position: "absolute",
-              zIndex: "3",
+              zIndex: "1003",
               marginTop: "48px",
               marginLeft: "12px",
             }}
