@@ -1,6 +1,8 @@
 # netlify-cms-widget-colorpicker
 
-A highly customizable color picker widget for Netlify CMS that supports HEX color codes, alpha channels via RGBA, color names and custom values. Choose from seven different color pickers
+A highly customizable color picker widget for Netlify CMS that supports HEX color codes, alpha channels via RGBA, color names and custom values. Choose from seven different color pickers.
+
+**A basic version of this widget with the chrome picker [is now part of Netlify CMS](https://www.netlifycms.org/docs/widgets/#color), so you just need this custom widget, if you want to use any of the other color pickers.**
 
 [-> check out the demo here](https://colorpicker-widget.netlify.app/demo)
 
